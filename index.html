@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CS Code to SteamID</title>
+	<script src="script.js"></script>
+</head>
+<body onload="initialize()" >
+	<h1>CS Friend code to SteamID64</h1>
+	<div id="UserInput">
+		<input type="text" id="FriendCode" placeholder="Put your Friend code here" onchange="SaveToLocalStorage('FriendCode', 'value')"></textarea>
+		<button onclick="Convert()">Convert to SteamID64</button>
+	</div>
+	<div>
+		<input type="checkbox" id="GoOut" name="GoOut" onchange="SaveToLocalStorage('GoOut', 'checked')" />
+		<label for="GoOut">Go to the csst.at profile after conversion</label>
+	</div>
+	<h2 id="SteamID64"></h2>
+</body>
+</html>
